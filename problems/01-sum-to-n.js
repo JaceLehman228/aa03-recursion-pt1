@@ -13,7 +13,11 @@ sumToN(-8)  // returns null
 
 
 function sumToN(n) {
-  // Your code here 
+  let total = n;
+  if (n > 0) {
+    total += sumToN(n-1);
+  }
+  return total;
 }
 
 
